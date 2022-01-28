@@ -1,5 +1,8 @@
 # park
 
+## Project Description
+An application that allows users to view carpark availability and save their favourite carparks. Also able to recommend nearby carparks with more vacancy and lower price
+
 ## Project setup
 ```
 npm install
