@@ -2,6 +2,8 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import firebase from "firebase";
 import router from "./router";
+import axios from "axios";
+import VueAxios from "vue-axios";
 
 var firebaseConfig = {
   apiKey: "AIzaSyAr2Ui8lJqUuQInF1qwl2oP5eJjP0BpH84",
@@ -15,4 +17,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-createApp(App).use(router).mount("#app");
+const app = createApp(App);
+app.use(router);
+app.use(VueAxios, axios);
+app.mount("#app");
